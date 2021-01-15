@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.circularreveal.CircularRevealRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="@dimen/athlete_item_width"
+        android:layout_height="@dimen/athlete_item_height"
+        android:padding="@dimen/padding_3dp"
+
+        app:cardCornerRadius="@dimen/card_corner_radius"
+        app:cardElevation="@dimen/card_elevation"
+        app:strokeColor="@android:color/darker_gray"
+        app:strokeWidth="@dimen/stroke_width">
+
+
+        <ImageView
+            android:id="@+id/imgAthlete"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/margin_5dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/not_available" />
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/margin_8dp"
+            android:text="Name"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size"
+            android:textStyle="bold"
+            android:visibility="gone" />
+    </com.google.android.material.card.MaterialCardView>
+</com.google.android.material.circularreveal.CircularRevealRelativeLayout>
